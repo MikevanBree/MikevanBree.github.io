@@ -19,6 +19,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/Pictures.css" rel="stylesheet" />
+
+        <!--added syntax highlighting-->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -33,6 +36,7 @@
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home / Blog</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="code.html">Code</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Trello.html">Trello Board</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +56,100 @@
                 </div>
             </div>
         </header>
-         <!-- Main Content-->
-         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                    <span class="">Work in Progress</span>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+                <div class="codecontainer">
+                    <pre class="prettyprint"><code class="language-arduino">
+                        #include <Adafruit_NeoPixel.h>
+
+                            const int neoPin = 9;
+                            const int NUMPIXELS = 128;
+                            Adafruit_NeoPixel neoPixel (NUMPIXELS, neoPin, NEO_GRB + NEO_KHZ800);
+                            
+                            
+                            const float player1 = neoPixel.Color(75, 20, 150);
+                            const float player2 = neoPixel.Color(150, 20, 75);
+                            const float zwart = neoPixel.Color(0,0,0);
+                            
+                            void setup() {
+                              neoPixel.begin();
+                              neoPixel.show();
+                            }
+                            
+                            void loop() {
+                              startsequence();
+                              delay(500);
+                              endsequence();
+                              delay(500);
+                            }
+                            
+                            
+                            void startsequence() {
+                              neoPixel.setBrightness(32);
+                              for (int i = 0; i < NUMPIXELS; i += 32) {
+                                neoPixel.setPixelColor(i, player1);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 1, player1);
+                                neoPixel.show();
+                                delay(100);
+                            
+                                neoPixel.setPixelColor(i + 12, player2);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 13, player2);
+                                neoPixel.show();
+                                delay(100);
+                            
+                            
+                                neoPixel.setPixelColor(i + 16, player2);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 17, player2);
+                                neoPixel.show();
+                                delay(100);
+                            
+                                neoPixel.setPixelColor(i + 28, player1);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 29, player1);
+                                neoPixel.show();
+                                delay(100);
+                              }
+                            }
+                            
+                            void endsequence() {
+                              neoPixel.setBrightness(25);
+                              for (int i = 0; i < NUMPIXELS; i += 32) {
+                                neoPixel.setPixelColor(i, zwart);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 1, zwart);
+                                neoPixel.show();
+                                delay(100);
+                            
+                                neoPixel.setPixelColor(i + 12, zwart);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 13, zwart);
+                                neoPixel.show();
+                                delay(100);
+                            
+                            
+                                neoPixel.setPixelColor(i + 16, zwart);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 17, zwart);
+                                neoPixel.show();
+                                delay(100);
+                            
+                                neoPixel.setPixelColor(i + 28, zwart);
+                                neoPixel.show();
+                                delay(50);
+                                neoPixel.setPixelColor(i + 29, zwart);
+                                neoPixel.show();
+                                delay(100);
+                              }
+                            }
+                            </code></pre>
+                  </div>
