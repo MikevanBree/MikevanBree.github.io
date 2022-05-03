@@ -19,6 +19,16 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/Pictures.css" rel="stylesheet" />
+        <style>
+            .bloglink {
+                color: #0085A1;
+            }
+            body {
+                padding-bottom: 0.5rem;
+            }
+        </style>
+
+
     </head>
     <body>
         <!-- Navigation-->
@@ -32,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home / Blog</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="code.html">Code</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="codemain.html">Code</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Trello.html">Trello Board</a></li>
                     </ul>
                 </div>
@@ -40,7 +50,7 @@
         </nav>
 
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('pic/Banner.png')">
+        <header class="masthead" style="background-image: url('blogAssets/assets/img/Banner.png')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -60,6 +70,74 @@
                     <!-- Post preview-->
                     <div class="post-preview" id="website-11-03">
                         <a href="">
+                            <h2 class="post-title">Programmeren</h2>
+                            <h3 class="post-subtitle">Het is me gelukt om via een dubbele <a class="bloglink" href="https://www.arduino.cc/reference/en/language/variables/data-types/array/" target="_blank" rel="noopener noreferrer">array</a> LEDs aan te sturen!
+                            </h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="">Mike van Bree</a>
+                            on April 20th, 2021
+                        </p>
+                    </div>
+                    
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview" id="website-11-03">
+                        <a href="">
+                            <h2 class="post-title">Website</h2>
+                            <h3 class="post-subtitle">Ik heb met de iframe tag de Trello board toegevoegd <a class="bloglink" href="Trello.html" target="_parent">hier</a>.
+                            </h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="">Mike van Bree</a>
+                            on April 20th, 2021
+                        </p>
+                    </div>
+                    
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview" id="website-20-04">
+                        <a href="">
+                            <h2 class="post-title">Website</h2>
+                            <h3 class="post-subtitle">Ik heb de website aangevuld met een stuk code voor wat ik nu mee experimenteer
+                            </h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="">Mike van Bree</a>
+                            on April 20th, 2021
+                        </p>
+                    </div>
+                    
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview" id="website-11-03">
+                        <a href="">
+                            <h2 class="post-title">Trello</h2>
+                            <h3 class="post-subtitle">Ik heb een Trello board aangemaakt om een planning in de vorm van ToDo/Doing/Done aan te houden.
+                            </h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="">Mike van Bree</a>
+                            on March 16, 2021
+                        </p>
+                    </div>
+                    
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview" id="website-11-03">
+                        <a href="">
                             <h2 class="post-title">Hardware</h2>
                             <h3 class="post-subtitle">Ik heb de Neopixel afgeknipt in stukken van 8 en op de houten plaat geplakt.
                                 Ook ben ik begonnen met het solderen van kabeltjes van stuk naar stuk.
@@ -74,7 +152,7 @@
                     
                     <!-- Divider-->
                     <hr class="my-4" />
-                    
+
                     <!-- Post preview-->
                     <div class="post-preview" id="website-11-03">
                         <a href="">
@@ -180,8 +258,8 @@
                         <a href="">
                             <h2 class="post-title">ICTPR4 - Elektrisch schema</h2>
                             <h3 class="post-subtitle">De LED-strip werkt via 5V, geen 12V.</h3>
-                            <a href="./pic/tekening2.png" target="_blank" rel="noopener noreferrer"><img src="./pic/tekening2.png" class="BlogPictures"></a>
-                            <a href="./pic/tekening3.png" target="_blank" rel="noopener noreferrer"><img src="./pic/tekening3.png" class="BlogPictures"></a>
+                            <a href="blogAssets/pic/tekening2.png" target="_blank" rel="noopener noreferrer"><img src="blogAssets/pic/tekening2.png" class="BlogPictures"></a>
+                            <a href="blogAssets/pic/tekening3.png" target="_blank" rel="noopener noreferrer"><img src="blogAssets/pic/tekening3.png" class="BlogPictures"></a>
                         </a>
                         <p class="post-meta">
                             Posted by
@@ -214,7 +292,7 @@
                         <a href="">
                             <h2 class="post-title">ICTPR4 - Elektrisch schema</h2>
                             <h3 class="post-subtitle">Ik heb een tekening en kort elektrisch schema getekend voor makkelijker voor te stellen.</h3>
-                            <a href="./pic/tekening1.png" target="_blank" rel="noopener noreferrer"><img src="./pic/tekening1.png" class="BlogPictures"></a>
+                            <a href="blogAssets/pic/tekening1.png" target="_blank" rel="noopener noreferrer"><img src="blogAssets/pic/tekening1.png" class="BlogPictures"></a>
                         </a>
                         <p class="post-meta">
                             Posted by
