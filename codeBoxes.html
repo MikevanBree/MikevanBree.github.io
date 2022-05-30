@@ -97,6 +97,7 @@
                 <pre style="background-color: #505050; border-radius: 1rem;
                     border-color: #252525; border-style: solid; border-width:
                     0.25rem;">
+
                     <font color="#a99cf2">#include</font> <font color="#a8db75">&lt;</font><b><font color="#a8db75">Adafruit_NeoPixel</font></b><font color="#a8db75">.</font><font color="#f8f8f2">h</font><font color="#a8db75">&gt;</font>
                     
                     <font color="#a99cf2">#define</font> <font color="#f8f8f2">NUMPIXELS</font> <font color="#ffcd22">128</font>
@@ -105,7 +106,7 @@
                     <b><font color="#a8db75">Adafruit_NeoPixel</font></b> <font color="#f8f8f2">neoPixel</font> <font color="#a8db75">=</font> <b><font color="#a8db75">Adafruit_NeoPixel</font></b><font color="#e8e2b7">(</font><font color="#f8f8f2">NUMPIXELS</font><font color="#a8db75">,</font> <font color="#f8f8f2">PIN</font><font color="#a8db75">,</font> <font color="#78dbe7">NEO_RGB</font> <font color="#a8db75">+</font> <font color="#78dbe7">NEO_KHZ800</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
                     
                     <font color="#78dbe7">void</font> <font color="#a99cf2">setup</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
-                     &nbsp;<font color="#434f54">&#47;&#47; put your setup code here, to run once:</font>
+                     &nbsp;<font color="#ff5500">&#47;&#47; put your setup code here, to run once:</font>
                      &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">begin</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
                      &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setBrightness</font><font color="#e8e2b7">(</font><font color="#ffcd22">16</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
                      &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">show</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
@@ -113,7 +114,7 @@
                     <font color="#e8e2b7">}</font>
                     
                     <font color="#78dbe7">void</font> <font color="#a99cf2">loop</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
-                     &nbsp;<font color="#434f54">&#47;&#47; put your main code here, to run repeatedly:</font>
+                     &nbsp;<font color="#ff5500">&#47;&#47; put your main code here, to run repeatedly:</font>
                      &nbsp;<font color="#a99cf2">for</font> <font color="#e8e2b7">(</font><font color="#78dbe7">int</font> <font color="#f8f8f2">i</font> <font color="#a8db75">=</font> <font color="#ffcd22">0</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">i</font> <font color="#a8db75">&lt;</font> <font color="#f8f8f2">NUMPIXELS</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">i</font> <font color="#a8db75">+=</font> <font color="#ffcd22">2</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
                      &nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">i</font><font color="#a8db75">,</font> <font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">Color</font><font color="#e8e2b7">(</font><font color="#ffcd22">255</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">255</font><font color="#e8e2b7">)</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
                      &nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">i</font> <font color="#a8db75">+</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">Color</font><font color="#e8e2b7">(</font><font color="#ffcd22">255</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">255</font><font color="#e8e2b7">)</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
@@ -136,7 +137,7 @@
                     wat de code doet:</span>
                 <video loop muted controls preload="auto"
                     src="assets/videos/codeBoxes.mp4"></video>
-            </</div>
+            </div>
 
             <!-- Footer-->
             <footer class="border-top">
@@ -149,7 +150,7 @@
                                         <span class="fa-stack fa-lg">
                                             <i class="fas fa-circle
                                                 fa-stack-2x"></i>
-                                            <i class="fa fa-address-book
+                                            <i class="fas fa-microchip
                                                 fa-stack-1x
                                                 fa-inverse"></i>
                                         </span>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> 6IICT Blog</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+            rel="stylesheet" type="text/css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+            rel="stylesheet" type="text/css" />
+
+        <!-- Site Js-->
+        <script src="js/scripts.js"></script>
+
+        <!--Bootstrap Js-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/Pictures.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="https://Mosa-RT.be/"
+                    rel="noreferrer noopener" target="_blank"><img
+                        src="assets/img/NAVBAR_logo.png" style="width: 225px;
+                        height: auto; margin-left: -1rem;"></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3
+                                py-lg-4" href="index.html">Home / Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3
+                                py-lg-4" href="codemain.html">Code</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3
+                                py-lg-4" href="media.html">Media</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3
+                                py-lg-4" href="Trello.html">Trello Board</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image:
+            url('assets/img/Banner.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Elektronisch Dambord</h1>
+                            <span class="subheading">Een geïntegreerd project
+                                van Mike van Bree</span>
+                            <span class="subheading">Zes Industriële ICT,
+                                Mosa-RT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5 content">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <pre style="background-color: #505050; border-radius: 1rem;
+                border-color: #252525; border-style: solid; border-width:
+                0.25rem;">
+
+                    <font color="#a99cf2">#include</font> <font color="#a8db75">&lt;</font><b><font color="#a8db75">Adafruit_NeoPixel</font></b><font color="#a8db75">.</font><font color="#f8f8f2">h</font><font color="#a8db75">&gt;</font>
+                    
+                    <font color="#78dbe7">double</font> <font color="#f8f8f2">ary</font><font color="#e8e2b7">[</font><font color="#ffcd22">8</font><font color="#e8e2b7">]</font><font color="#e8e2b7">[</font><font color="#ffcd22">16</font><font color="#e8e2b7">]</font> <font color="#a8db75">=</font> <font color="#e8e2b7">{</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; -&gt;</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; &lt;-</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; -&gt;</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; &lt;-</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; -&gt;</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; &lt;-</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#e8e2b7">}</font><font color="#a8db75">,</font> <font color="#ff5500">&#47;&#47; -&gt;</font>
+                     &nbsp;<font color="#e8e2b7">{</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#a8db75">,</font> <font color="#ffcd22">2</font><font color="#e8e2b7">}</font> &nbsp;<font color="#ff5500">&#47;&#47; &lt;-</font>
+                    <font color="#e8e2b7">}</font><font color="#f8f8f2">;</font>
+                    
+                    <font color="#78dbe7">const</font> <font color="#78dbe7">int</font> <font color="#f8f8f2">NUMPIXELS</font> <font color="#a8db75">=</font> <font color="#ffcd22">128</font><font color="#f8f8f2">;</font>
+                    <font color="#78dbe7">const</font> <font color="#78dbe7">int</font> <font color="#f8f8f2">DATA</font> <font color="#a8db75">=</font> <font color="#ffcd22">13</font><font color="#f8f8f2">;</font>
+                    <b><font color="#a8db75">Adafruit_NeoPixel</font></b> <font color="#f8f8f2">neoPixel</font> <font color="#e8e2b7">(</font><font color="#f8f8f2">NUMPIXELS</font><font color="#a8db75">,</font> <font color="#f8f8f2">DATA</font><font color="#a8db75">,</font> <font color="#78dbe7">NEO_GRB</font> <font color="#a8db75">+</font> <font color="#78dbe7">NEO_KHZ800</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    
+                    <font color="#78dbe7">int</font> <font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">=</font> <font color="#ffcd22">0</font><font color="#f8f8f2">;</font>
+                    <font color="#78dbe7">const</font> <font color="#78dbe7">float</font> <font color="#f8f8f2">OFF</font> <font color="#a8db75">=</font> <font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">Color</font><font color="#e8e2b7">(</font><font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#a8db75">,</font> <font color="#ffcd22">0</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    <font color="#78dbe7">const</font> <font color="#78dbe7">float</font> <font color="#f8f8f2">RED</font> <font color="#a8db75">=</font> <font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">Color</font><font color="#e8e2b7">(</font><font color="#ffcd22">252</font><font color="#a8db75">,</font> <font color="#ffcd22">84</font><font color="#a8db75">,</font> <font color="#ffcd22">12</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    <font color="#78dbe7">const</font> <font color="#78dbe7">float</font> <font color="#f8f8f2">BLUE</font> <font color="#a8db75">=</font> <font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">Color</font><font color="#e8e2b7">(</font><font color="#ffcd22">12</font><font color="#a8db75">,</font> <font color="#ffcd22">88</font><font color="#a8db75">,</font> <font color="#ffcd22">252</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    
+                    <font color="#78dbe7">void</font> <font color="#a99cf2">setup</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font> &nbsp;<font color="#ff5500">&#47;&#47; put your setup code here, to run once:</font>
+                     &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">begin</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">show</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    
+                     &nbsp;<font color="#ff5500">&#47;&#47;maximum brightness</font>
+                     &nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setBrightness</font><font color="#e8e2b7">(</font><font color="#ffcd22">32</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                    <font color="#e8e2b7">}</font>
+                    
+                    <font color="#78dbe7">void</font> <font color="#a99cf2">loop</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font> &nbsp;<font color="#ff5500">&#47;&#47; put your looping code here, to run infinity:</font>
+                    
+                     &nbsp;<font color="#a99cf2">for</font> <font color="#e8e2b7">(</font><font color="#78dbe7">int</font> <font color="#f8f8f2">row</font> <font color="#a8db75">=</font> <font color="#ffcd22">0</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">row</font> <font color="#a8db75">&lt;</font> <font color="#ffcd22">8</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">row</font><font color="#a8db75">++</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
+                     &nbsp;&nbsp;&nbsp;<font color="#a99cf2">for</font> <font color="#e8e2b7">(</font><font color="#78dbe7">int</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">=</font> <font color="#ffcd22">0</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">&lt;</font> <font color="#ffcd22">16</font><font color="#f8f8f2">;</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">+=</font> <font color="#ffcd22">2</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#a99cf2">if</font> <font color="#e8e2b7">(</font><font color="#f8f8f2">ary</font><font color="#e8e2b7">[</font><font color="#f8f8f2">row</font><font color="#e8e2b7">]</font><font color="#e8e2b7">[</font><font color="#f8f8f2">LED</font><font color="#e8e2b7">]</font> <font color="#a8db75">==</font> <font color="#ffcd22">2</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">=</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">+</font> <font color="#e8e2b7">(</font><font color="#ffcd22">16</font> <font color="#a8db75">*</font> <font color="#f8f8f2">row</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font><font color="#a8db75">,</font> <font color="#f8f8f2">RED</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">+</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#f8f8f2">RED</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">show</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#e8e2b7">}</font> <font color="#a99cf2">else</font> <font color="#a99cf2">if</font> <font color="#e8e2b7">(</font><font color="#f8f8f2">ary</font><font color="#e8e2b7">[</font><font color="#f8f8f2">row</font><font color="#e8e2b7">]</font><font color="#e8e2b7">[</font><font color="#f8f8f2">LED</font><font color="#e8e2b7">]</font> <font color="#a8db75">==</font> <font color="#ffcd22">1</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">=</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">+</font> <font color="#e8e2b7">(</font><font color="#ffcd22">16</font> <font color="#a8db75">*</font> <font color="#f8f8f2">row</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font><font color="#a8db75">,</font> <font color="#f8f8f2">BLUE</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">+</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#f8f8f2">BLUE</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">show</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#e8e2b7">}</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#a99cf2">else</font> <font color="#a99cf2">if</font> <font color="#e8e2b7">(</font><font color="#f8f8f2">ary</font><font color="#e8e2b7">[</font><font color="#f8f8f2">row</font><font color="#e8e2b7">]</font><font color="#e8e2b7">[</font><font color="#f8f8f2">LED</font><font color="#e8e2b7">]</font> <font color="#a8db75">==</font> <font color="#ffcd22">0</font><font color="#e8e2b7">)</font> <font color="#e8e2b7">{</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">=</font> <font color="#f8f8f2">LED</font> <font color="#a8db75">+</font> <font color="#e8e2b7">(</font><font color="#ffcd22">16</font> <font color="#a8db75">*</font> <font color="#f8f8f2">row</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font><font color="#a8db75">,</font> <font color="#f8f8f2">OFF</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">setPixelColor</font><font color="#e8e2b7">(</font><font color="#f8f8f2">LEDnumber</font> <font color="#a8db75">+</font> <font color="#ffcd22">1</font><font color="#a8db75">,</font> <font color="#f8f8f2">OFF</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#f8f8f2">neoPixel</font><font color="#a8db75">.</font><font color="#78dbe7">show</font><font color="#e8e2b7">(</font><font color="#e8e2b7">)</font><font color="#f8f8f2">;</font>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#e8e2b7">}</font>
+                     &nbsp;&nbsp;&nbsp;<font color="#e8e2b7">}</font>
+                     &nbsp;<font color="#e8e2b7">}</font>
+                    <font color="#e8e2b7">}</font>
+                    
+                    </pre>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-microchip fa-stack-1x
+                                            fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://github.com/MikevanBree/MikevanBree.github.io">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x
+                                            fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-angle-double-up
+                                            fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright
+                            &copy; Mike van Bree 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
